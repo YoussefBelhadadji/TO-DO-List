@@ -106,7 +106,7 @@ ul li::before{
     transform:rotateZ(180deg);
     background-color: #edeef0;
  }
- /* تأثير عند ظهور المهمة */
+
 @keyframes slideIn {
 from {
     transform: translateX(100%);
@@ -118,7 +118,7 @@ from {
     }
 }
 
-  /* تأثير عند حذف المهمة */
+
 @keyframes fadeOut {
 from {
     opacity: 1;
@@ -130,7 +130,7 @@ to {
     }
 }
 
-  /* تطبيق تأثير الانزلاق على العناصر الجديدة */
+
 ul li {
     list-style: none;
     font-size: 14px;
@@ -139,10 +139,9 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
-    animation: slideIn 0.5s ease-out; /* تأثير الانزلاق */
+    animation: slideIn 0.5s ease-out; 
   }
   
-  /* تطبيق تأثير التلاشي عند إزالة العنصر */
 ul li.removed {
     animation: fadeOut 0.5s ease-out forwards;
 }
